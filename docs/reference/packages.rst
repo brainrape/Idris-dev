@@ -4,10 +4,13 @@
 Packages
 ********
 
-Idris includes a simple system for building packages from a
+Idris includes a simple system for building a package from a
 package description file. These files can be used with the Idris
 compiler to manage the development process of your Idris
 programmes and packages.
+
+To define, download, build and install Idris packages and other dependencies for your project using the Nix package manager, see the
+`Idris section in the Nixpgs manual <https://nixos.org/nixpkgs/manual/#idris-packages>`_.
 
 Package Descriptions
 ====================

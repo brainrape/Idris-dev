@@ -4,10 +4,27 @@
 Getting Started
 ***************
 
-Prerequisites
-=============
+Installing
+==========
 
-Before installing Idris, you will need to make sure you have all
+On macOS and Linux, The easiest way to install Idris is to get the
+`Nix <https://nixos.org/nix/>`_ functional package manager, then type
+
+::
+
+    nix-env -i idris
+
+This will install Idris and everything it needs.
+
+To install Idris libraries and other dependencies, or create an isolated build
+environment for your project, see the
+`Idris section in the Nixpgs manual <https://nixos.org/nixpkgs/manual/#idris-packages>`_.
+
+Installing with GHC and Cabal
+-----------------------------
+
+Another way to install Idris is with GHC and Cabal.
+Before installing, you will need to make sure you have all
 of the necessary libraries and tools. You will need:
 
 - A fairly recent version of `GHC <https://www.haskell.org/ghc/>`_. The
@@ -15,11 +32,7 @@ of the necessary libraries and tools. You will need:
 
 - The *GNU Multiple Precision Arithmetic Library* (GMP) is available  from MacPorts/Homebrew and all major Linux distributions.
 
-Downloading and Installing
-==========================
-
-The easiest way to install Idris, if you have all of the
-prerequisites, is to type:
+If you have all of the prerequisites, type:
 
 ::
 
@@ -36,6 +49,9 @@ please ensure that you have added ``~/.cabal/bin`` to your ``$PATH``
 environment variable. Mac OS X users may find they need to add
 ``~/Library/Haskell/bin`` instead, and Windows users will typically
 find that Cabal installs programs in ``%HOME%\AppData\Roaming\cabal\bin``.
+
+Running
+=======
 
 To check that installation has succeeded, and to write your first
 Idris program, create a file called ``hello.idr`` containing the
